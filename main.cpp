@@ -2,14 +2,11 @@
 #include <cstdlib>
 using namespace std;
 
-
 void Velocity()
 {
 	double D, T;
 	double answer;
-
 	cout << "enter a distance value, and a time value: ";
-	
 	cin >> D;
 	cin >> T;
 	answer = (D / T);
@@ -20,9 +17,7 @@ void Acceleration()
 {
 	double D, T;
 	double answer;
-
 	cout << "enter a change in velocity value, and a change in time value: ";
-	
 	cin >> D;
 	cin >> T;
 	answer = (D / T);
@@ -64,9 +59,7 @@ int main()
 		cout << "2. Acceleration" << endl;
 		cout << "3. Work" << endl;
 		cout << "4. Power" << endl; 
-
-	cin >> option;
-
+		cin >> option;
 
 	switch (option)
 	{
@@ -85,7 +78,6 @@ int main()
 		case 4:
 		Power();
 		break;
-
 	}
 
 	cout << "Perform another calculation? (y or n)" << endl;
@@ -94,5 +86,4 @@ int main()
 } while(yes == 'y');
 
 	return 0;
-
 }
